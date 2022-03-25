@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="movies">Movies</string>
+    <string name="tvshows">Tv Shows</string>
+    <string name="message_undo">Batalkan menghapus item sebelumnya?</string>
+    <string name="message_ok">OK</string>
+    <string name="notfound">Data Tidak Ditemukan</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="no_data">Tidak ada Data!</string>
+</resources>
