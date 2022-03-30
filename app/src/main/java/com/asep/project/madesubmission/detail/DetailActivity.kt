@@ -30,7 +30,6 @@ class DetailActivity : AppCompatActivity() {
         }
 
         binding.backButton.setOnClickListener { onBackPressed() }
-        binding.share.setOnClickListener { share() }
     }
 
     private fun populateDetail(movie: Movie) {
@@ -38,17 +37,9 @@ class DetailActivity : AppCompatActivity() {
             titleDetail.text = movie.title
             date.text = movie.releaseDate
             overview.text = movie.overview
-            popularity.text = getString(
-                R.string.popularity_detail,
-                movie.popularity.toString(),
-                movie.voteCount.toString(),
-                movie.voteAverage.toString()
-            )
+            language.text = movie.originalLanguage
+            popularity.text = movie.popularity.toString()
             userScore.text = movie.voteAverage.toString()
-            Glide.with(this@DetailActivity)
-                .load(getString(R.string.baseUrlImage, movie.posterPath))
-                .into(posterTopBar)
-            posterTopBar.tag = movie.posterPath
 
             Glide.with(this@DetailActivity)
                 .load(getString(R.string.baseUrlImage, movie.posterPath))
@@ -83,13 +74,4 @@ class DetailActivity : AppCompatActivity() {
         }
     }
 
-    private fun share() {
-        val mimeType = "text/plain"
-        ShareCompat.IntentBuilder.from(this).apply {
-            setType(mimeType)
-            setChooserTitle(getString(R.string.shareTitle))
-            setText(getString(R.string.shareBody))
-            startChooser()
-        }
-    }
 }

@@ -26,7 +26,7 @@
             android:background="@drawable/poster_placeholder"
             android:contentDescription="@string/poster"
             android:scaleType="centerCrop"
-            android:src="@drawable/poster_crimes"
+            android:src="@drawable/img_sample"
             app:riv_corner_radius="20dp" />
 
         <ProgressBar
@@ -53,7 +53,7 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="24dp"
                 android:text="@string/dummyTitle"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
