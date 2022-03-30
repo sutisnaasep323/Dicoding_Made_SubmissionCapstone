@@ -52,12 +52,9 @@ class MoviesAdapter : RecyclerView.Adapter<MoviesAdapter.MovieViewHolder>() {
                 title.text = movie.title
                 date.text = movie.releaseDate
                 language.text = movie.originalLanguage
-                popularity.text =
-                    itemView.context.getString(
-                        R.string.popularity_d,
-                        movie.popularity.toString()
-                    )
+                popularity.text = movie.popularity.toString()
                 userScore.text = movie.voteAverage.toString()
+                overview.text = movie.overview
 
                 Glide.with(itemView.context)
                     .load(itemView.context.getString(R.string.baseUrlImage, movie.posterPath))
@@ -82,8 +79,7 @@ class MoviesAdapter : RecyclerView.Adapter<MoviesAdapter.MovieViewHolder>() {
                             progressBar.visibility = GONE
                             return false
                         }
-                    })
-                    .into(poster)
+                    }).into(poster)
             }
         }
 
