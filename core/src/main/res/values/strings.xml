@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Movie App</string>
     <string name="dummyTitle">Black Panther</string>
-    <string name="dummyDate">23 august 2020</string>
+    <string name="dummyDate">2020 02 20</string>
     <string name="dummyUserScore">70</string>
     <string name="loremIpsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur diam eget volutpat porta. Sed dictum id mi in facilisis. Suspendisse vehicula convallis efficitur. Nunc imperdiet velit ut est hendrerit, vel cursus libero pellentesque. Sed varius vel orci in finibus. Etiam eu enim justo. Duis tempor ipsum in sem aliquam, id vestibulum odio imperdiet. Curabitur condimentum sem lacus, nec mattis diam pharetra nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In ac erat at lorem mattis varius. Etiam eu risus metus.</string>
     <string name="movies">Movies</string>
