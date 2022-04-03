@@ -2,7 +2,6 @@ package com.asep.project.madesubmission.detail
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ShareCompat
 import androidx.core.content.ContextCompat
 import com.asep.project.core.domain.model.Movie
 import com.asep.project.madesubmission.R
